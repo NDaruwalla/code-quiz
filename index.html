@@ -12,41 +12,49 @@
     <title>Lake Champlain Quiz</title>
 </head>
 
-<body>
-
+<body background = "./assets/images/water.jpg"> 
 
     <div class="container">
-
-        <div class="timer">Timer:</div>
-
 
         <header class="headerStyle">
             <h1>Lake Champlain Quiz</h1>
 
         </header>
 
+
+        <p>
+            <!--link to leaderboard-->
+            <a href="assets/leaderboard.html">View Leaderboard</a>
+        </p>
+
+        <!--countdown timer-->
+        <div class="timer" id=countdown>Timer</div>
+
         <div>
+            <!--button that starts the quiz-->
             <button class="startQuizBtn">Start Quiz</button>
         </div>
 
+        <!--this area is where the questions are presented-->
         <div class="question">
+            <textarea id = "questArea"></textarea>
+         
 
         </div>
-
+        <!--this area is where the answer choices are presented-->
         <div class="choices">
+            <textarea id = "choicesArea"></textarea>
 
         </div>
-       
+        <!--this area is for presenting the feedback (correct answer, etc.)-->
         <div class="feedback">
+            <textarea id = "feedbackArea"></textarea>
+
 
         </div>
-
+        <cite> Lake Champlain facts from: https://www.lclt.org/about-lake-champlain/lake-champlain-facts/</cite>
     </div>
-
-    <footer>
-
-    </footer>
-
+<script> src="main.js"</script>
 </body>
 
 </html>
