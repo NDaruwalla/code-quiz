@@ -1,0 +1,139 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  /* css comments here */
+  /*background photo by Lisa Fotios from Pexels */
+
+  body {
+        height: 120vh;
+        width: 100vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+       /* background-image: url("assets/images/water.jpg"); */
+  }
+
+  .container{
+    width: 80vw;
+    max-width: 80%;
+    height: 95vh;
+    box-shadow: 3px 5px 10px 5px;
+    background-color: rgba(86, 123, 153, 0.60);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 7px;
+  }
+
+  .startQuizBtn {
+    font-size: large;
+    font-weight: bold;
+    color: lightskyblue;
+    background: rgb(3, 21, 49);
+    width: 12rem;
+    height: 4rem;
+    border-radius: 7px;
+    padding: 10px;
+    margin: 6px;
+  }
+
+  .clearLeaderboard {
+    font-size: large;
+    font-weight: bold;
+    color: lightskyblue;
+    background: rgb(3, 21, 49);
+    width: 12rem;
+    height: 4rem;
+    border-radius: 7px;
+    padding: 10px;
+    margin: 6px;
+  }
+
+  .timer {
+    font-size: large;
+    font-weight: bold;
+    background-color: rgb(135, 184, 212);
+    width: 12rem;
+    height: 4rem;
+    border-radius: 7px;
+    padding: 10px;
+    color: black;
+    margin: 6px;
+   
+       }
+
+   .question{
+    width: 80vw;
+    max-width: 90%;
+    height: 20vh;
+    background-color: rgb(135, 184, 212);
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 7px;
+    margin-top: 1em;
+    margin-bottom: .5em;
+  }
+
+  .choices{
+    width: 80vw;
+    max-width: 90%;
+    height: 20vh;
+    background-color: rgb(135, 184, 212);
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 7px;
+    margin-top: .5em;
+    margin-bottom: .5em;
+  }
+  
+  .feedback{
+    width: 80vw;
+    max-width: 90%;
+    height: 20vh;
+    background-color: rgb(3, 37, 53);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 7px;
+    margin-top: .5em;
+    margin-bottom: .5em;
+  }
+
+  #countdown{
+    background: none;
+    color: black;
+    
+  }
+
+  #questArea{
+    background: none;
+  }
+
+  #choicesArea{
+    background: none;
+  }
+
+  #feedbackArea{
+    background: none;
+  }
+
+  #leaderboardText{
+    background: none;
+  }
