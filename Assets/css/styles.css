@@ -43,6 +43,18 @@
     margin: 6px;
   }
 
+  .clearLeaderboard {
+    font-size: large;
+    font-weight: bold;
+    color: lightskyblue;
+    background: rgb(3, 21, 49);
+    width: 12rem;
+    height: 4rem;
+    border-radius: 7px;
+    padding: 10px;
+    margin: 6px;
+  }
+
   .timer {
     font-size: large;
     font-weight: bold;
@@ -119,5 +131,9 @@
   }
 
   #feedbackArea{
+    background: none;
+  }
+
+  #leaderboardText{
     background: none;
   }
