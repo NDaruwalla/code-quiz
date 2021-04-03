@@ -7,12 +7,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" type="image/png" href="assets/images/favicon.png">
     <link rel="stylesheet" type="text/css" href="assets/css/styles.css">
-    <script src="assets/js/main.js"></script>
     <!-- https://favpng.com/ -->
     <title>Lake Champlain Quiz</title>
 </head>
 
-<body background = "./assets/images/water.jpg"> 
+<body background="./assets/images/water.jpg">
 
     <div class="container">
 
@@ -21,40 +20,50 @@
 
         </header>
 
-
         <p>
             <!--link to leaderboard-->
             <a href="leaderboard.html">View Leaderboard</a>
         </p>
 
         <!--countdown timer-->
-        <div class="timer" id=countdown>Timer</div>
-
-        <div>
+        <div class="timer" id="countdown">Time: 60</div>
+        <div id="startQuiz">
             <!--button that starts the quiz-->
-            <button class="startQuizBtn">Start Quiz</button>
+            <button type="button" class="startQuizBtn">Start Quiz</button>
+        
         </div>
-
         <!--this area is where the questions are presented-->
-        <div class="question">
-            <textarea id = "questArea"></textarea>
-         
-
+        <div class="questionContainer">
+            <h2 id="questText">Click the "Start Quiz" button to test your knowledge about Lake Champlain!</h2>
         </div>
-        <!--this area is where the answer choices are presented-->
-        <div class="choices">
-            <textarea id = "choicesArea"></textarea>
-
+  <!--this area is where the answer options are presented-->
+        <div class="choicesContainer" id="choice1">
+            <p class="choicesText"></p>
         </div>
+
+        <div class="choicesContainer" id="choice2">
+            <p class="choicesText"></p>
+        </div>
+
+        <div class="choicesContainer" id="choice3">
+            <p class="choicesText"></p>
+        </div>
+
+        <div class="choicesContainer" id="choice4">
+            <p class="choicesText"></p>
+        </div>
+   
+
         <!--this area is for presenting the feedback (correct answer, etc.)-->
-        <div class="feedback">
-            <textarea id = "feedbackArea"></textarea>
-
-
+        <div class="feedbackContainer">
+            <p class="feedbackText" id=feedback>You must get the question presented correct before moving onto the next question. Your remaining time is your score and each wrong answers will reduce your score by 5 seconds.</p>
         </div>
+    
+       
         <cite> Lake Champlain facts from: https://www.lclt.org/about-lake-champlain/lake-champlain-facts/</cite>
     </div>
-<script> src="main.js"</script>
+    </div>
+    <script type="text/javascript"  src="assets/js/main.js"></script>
 </body>
 
 </html>

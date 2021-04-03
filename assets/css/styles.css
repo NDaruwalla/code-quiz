@@ -22,13 +22,14 @@
     max-width: 80%;
     height: 95vh;
     box-shadow: 3px 5px 10px 5px;
-    background-color: rgba(86, 123, 153, 0.60);
+    border-radius: 7px;
+    background-color: rgba(89, 134, 156, 0.6); 
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
-    border-radius: 7px;
+    padding-top: 2rem;
   }
 
   .startQuizBtn {
@@ -66,9 +67,9 @@
     color: black;
     margin: 6px;
    
-       }
+       } 
 
-   .question{
+   .questionContainer{
     width: 80vw;
     max-width: 90%;
     height: 20vh;
@@ -84,11 +85,11 @@
     margin-bottom: .5em;
   }
 
-  .choices{
+  .choicesContainer{
     width: 80vw;
     max-width: 90%;
     height: 20vh;
-    background-color: rgb(135, 184, 212);
+    background-color: rgb(171, 197, 211);
     color: black;
     display: flex;
     flex-direction: column;
@@ -100,7 +101,7 @@
     margin-bottom: .5em;
   }
   
-  .feedback{
+  .feedbackContainer{
     width: 80vw;
     max-width: 90%;
     height: 20vh;
@@ -112,7 +113,7 @@
     align-items: center;
     text-align: center;
     border-radius: 7px;
-    margin-top: .5em;
+    margin-top: 2rem;
     margin-bottom: .5em;
   }
 
@@ -122,18 +123,25 @@
     
   }
 
-  #questArea{
-    background: none;
+
+/* Table styles from w3 schools */
+  cite {
+    padding-top: 5rem;
+    padding-bottom: 2rem;
   }
 
-  #choicesArea{
-    background: none;
+  table {
+    font-family: arial, sans-serif;
+   /* border-collapse: collapse; */
+    width: 200px;
   }
-
-  #feedbackArea{
-    background: none;
+  
+  td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
   }
-
-  #leaderboardText{
-    background: none;
+  
+  tr:nth-child(even) {
+    background-color: #dddddd;
   }
