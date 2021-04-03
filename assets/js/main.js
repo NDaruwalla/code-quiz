@@ -1,24 +1,17 @@
+//Pseudo Code:
 // a timer counts down from 60 seconds to 0 when start quiz button is clicked (event listener)
-
 // quiz begins (question presented) when start quiz button is clicked
-
 // time (5 seconds) is subtracted from the clock for each incorrect answer
-
+// user does not advance to the next question until a correct answer is selected
+// user receives feedback for correct and incorrect selections
 // quiz stops when all questions are answered or timer reaches zero seconds remaining
-
 // score = remaining seconds 
-
-// can save initials and score at the end of the game (leaderboard)
-
+// user can save initials and score at the end of the game (leaderboard)
 // user can clear the leaderboard (delete scores and initials)
-
 // from leaderboard user can restart quiz
-
 // from leaderboard page user can return to homepage
 
-// start quiz button
 
-// feedback for correct and incorrect responses
 
 // Resources reviewed: https://www.udemy.com/course/build-a-quiz-app-with-html-css-and-javascript/learn/lecture/13685348#overview
 

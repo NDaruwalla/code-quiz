@@ -9,7 +9,7 @@ This timed coding quiz has multiple-choice questions. The app runs in the browse
 ## User Story
 
 ```
-AS A coding website visitor
+AS A  website visitor
 I WANT to take a timed quiz about Lake Champlain that stores high scores
 SO THAT I can gauge my progress compared to others
 ```
@@ -17,70 +17,46 @@ SO THAT I can gauge my progress compared to others
 ## Key Features
 
 ```
-* The quiz features a start button
-* WHEN I click the start button
-* THEN a timer starts and I am presented with a question
-* WHEN I answer a question
-* THEN I am presented with another question
-WHEN I answer a question incorrectly
-THEN time is subtracted from the clock
-WHEN all questions are answered or the timer reaches 0
-THEN the game is over
-WHEN the game is over
-THEN I can save my initials and my score
+* A start button
+* A timer counts down from 60 to 0
+* Score calculation
+* Feedback on user selections
+* An interactive leaderboard
+
 ```
+## Pseudo Code
 
-## Mock-Up
+* a timer counts down from 60 seconds to 0 when start quiz button is clicked
+* quiz begins (question presented) when "start quiz" button is clicked
+* time (5 seconds) is subtracted from the clock for each incorrect answer
+* user does not advance to the next question until a correct answer is selected
+* user receives feedback for correct and incorrect selections
+* quiz stops when all questions are answered or timer reaches zero seconds remaining
+* user receives feedback that time is up if they run out of time before answering all questions
+* score = remaining seconds 
+* user can save initials and score at the end of the game (leaderboard)
+* user can clear the leaderboard (delete scores and initials)
+* from leaderboard user can restart quiz
+* from leaderboard page user can return to homepage
 
-The following animation demonstrates the application functionality:
 
-![A user clicks through an interactive coding quiz, then enters initials to save the high score before resetting and starting over.](./Assets/04-web-apis-homework-demo.gif)
+## Screen Capture
 
-## Grading Requirements
+The following shows the visual display and functionality of the quiz:
 
-This homework is graded based on the following criteria: 
+![A user clicks through an interactive quiz about Lake Champlain and receives feedback before entering initials on the leaderboard](assets/images/quiz.jpg)
 
-### Technical Acceptance Criteria: 40%
 
-* Satisfies all of the preceding acceptance criteria.
+## Deployed application
 
-### Deployment: 32%
+The URL of the deployed application.
+https://ndaruwalla.github.io/code-quiz/
 
-* Application deployed at live URL.
+## GitHub repository
 
-* Application loads with no errors.
+The URL of the GitHub repository that contains my code.
+https://github.com/NDaruwalla/code-quiz/
 
-* Application GitHub URL submitted.
-
-* GitHub repository contains application code.
-
-### Application Quality: 15%
-
-* Application user experience is intuitive and easy to navigate.
-
-* Application user interface style is clean and polished.
-
-* Application resembles the mock-up functionality provided in the homework instructions.
-
-### Repository Quality: 13%
-
-* Repository has a unique name.
-
-* Repository follows best practices for file structure and naming conventions.
-
-* Repository follows best practices for class/id naming conventions, indentation, quality comments, etc.
-
-* Repository contains multiple descriptive commit messages.
-
-* Repository contains quality readme file with description, screenshot, and link to deployed application.
-
-## Review
-
-You are required to submit BOTH of the following for review:
-
-* The URL of the functional, deployed application.
-
-* The URL of the GitHub repository, with a unique name and a readme describing the project.
 
 ---
 
