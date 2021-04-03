@@ -12,8 +12,26 @@
 // from leaderboard page user can return to homepage
 
 
-
-// Resources reviewed: https://www.udemy.com/course/build-a-quiz-app-with-html-css-and-javascript/learn/lecture/13685348#overview
+/*  
+Cited Resources: Key sites reviewed for this project include the following
+Quiz timer --
+https://www.w3schools.com/howto/howto_js_countdown.asp
+https://www.educative.io/edpresso/how-to-create-a-countdown-timer-using-javascript
+https://www.sitepoint.com/build-javascript-countdown-timer-no-dependencies/
+https://www.javascripttutorial.net/javascript-dom/javascript-countdown-timer
+Other --
+https://www.udemy.com/course/build-a-quiz-app-with-html-css-and-javascript/learn/lecture/13685348#overview
+https://www.w3schools.com/js/js_htmldom_eventlistener.asp
+https://developer.mozilla.org/en-US/docs/Web/API/EventListener
+https://www.w3schools.com/jsref/met_win_setinterval.asp
+https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/setInterval
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Functions 
+https://www.w3schools.com/js/js_loop_for.asp 
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Loops_and_iteration
+https://developer.mozilla.org/en-US/docs/Web/API/Storage/getItem
+https://www.w3schools.com/jsref/met_storage_getitem.asp
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON/parse
+*/
 
 let questionhtml = document.getElementById('questText');
 let choices1html = document.getElementById('choice1');
@@ -23,6 +41,7 @@ let choices4html = document.getElementById('choice4');
 let startquizhtml = document.getElementById('startQuiz');
 let countdownhtml = document.getElementById('countdown');
 let feedbackhtml = document.getElementById('feedback');
+
 
 console.log(startquizhtml);
 
@@ -93,6 +112,9 @@ startquizhtml.addEventListener('click', function ()
   funcQuestions(0)
 });
 
+
+
+
 function funcQuestions (i) {
 
   // for  (let i = 0; i <5; i++) 
@@ -102,7 +124,7 @@ function funcQuestions (i) {
   if (questionIndex > 4) {
     secondsLeftfinal = secondsLeft;
     clearInterval(timerBreak);
-    // prompt("Time up")
+
     countdownhtml.textContent = 'Congratulations! Your score is: ' + String(secondsLeftfinal);
     console.log(questionIndex);
     secondsLeft = 60;
@@ -218,6 +240,8 @@ choices2html.addEventListener('click', choice2selectfunction);
 choices3html.addEventListener('click', choice3selectfunction);
 choices4html.addEventListener('click', choice4selectfunction);
 
+
+// I was not able to do the local storage in time. I will revisit it in the future as time permits. 
 function savetoleaderboard () {
   console.log('Save to Leaderboard');
   console.log('Your score was: ' + String(secondsLeft));
